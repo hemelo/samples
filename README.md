@@ -1,2 +1,3 @@
-# samples
-samples
+# Samples
+
+Simple projects
