@@ -8,16 +8,22 @@
 </script>
 
 
-<div class="container">
+<div class="app">
   <header>
-    <h1>Todo List</h1>
+      <div class="app-bar">
+          <div class="app-header">
+              <h1>📝️ To Do List</h1>
+          </div>
+      </div>
   </header>
 
-  <TaskForm />
+  <div class="main">
+      <TaskForm />
 
-  <ul>
-    {#each tasks as task (task._id)}
-        <Task task={task} />
-    {/each}
-  </ul>
+      <ul class="tasks">
+          {#each tasks as task (task._id)}
+              <Task task={task} />
+          {/each}
+      </ul>
+  </div>
 </div>
